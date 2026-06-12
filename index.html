@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MoneyFlow</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h1>MoneyFlow</h1>
+
+            <p>
+                Conversor de moedas em tempo real
+            </p>
+
+            <div class="form-group">
+
+                <label>Valor</label>
+
+                <input type="number" id="amount" placeholder="Digite um valor">
+
+            </div>
+
+            <div class="currency-row">
+
+                <div>
+
+                    <label>De</label>
+
+                    <select id="fromCurrency">
+
+                        <option value="BRL">BRL</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                        <option value="JPY">JPY</option>
+
+                    </select>
+
+                </div>
+
+                <button id="swapBtn">
+
+                    ⇄
+
+                </button>
+
+                <div>
+
+                    <label>Para</label>
+
+                    <select id="toCurrency">
+
+                        <option value="USD">USD</option>
+                        <option value="BRL">BRL</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                        <option value="JPY">JPY</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+            <button id="convertBtn">
+
+                Converter
+
+            </button>
+
+            <div id="loading">
+
+                Buscando cotação...
+
+            </div>
+
+            <div id="result">
+
+                R$ 0,00
+
+            </div>
+
+        </div>
+
+        <div class="history">
+
+            <h2>
+                Histórico
+            </h2>
+
+            <ul id="historyList">
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
